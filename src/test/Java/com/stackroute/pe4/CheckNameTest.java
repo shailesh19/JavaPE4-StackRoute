@@ -24,8 +24,7 @@ public class CheckNameTest
     public void givenInputStringShouldCheckForNameAndReturnPositiveResult()
     {
         boolean actualResult = object.nameCheck("This is Harry");
-        boolean expectedResult = true;
-        assertEquals(expectedResult,actualResult);
+        assertTrue(actualResult);
 
     }
 }
