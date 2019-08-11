@@ -6,6 +6,5 @@ public class CheckName
     {
         boolean isFound = inputString.matches("(.*)Harry(.*)");
         return isFound;
-
     }
 }

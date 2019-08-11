@@ -28,4 +28,11 @@ CharacterCounter object;
         int actualResult = object.countCharacterMethod("This is Java is Java is Java and again Java","a");
         assertEquals(11,actualResult);
     }
+
+    @Test
+    public void givenStringInputShouldReturnNegativeResult()
+    {
+        int actualResult = object.countCharacterMethod("This is Java","e");
+        assertEquals(0,actualResult);
+    }
 }
