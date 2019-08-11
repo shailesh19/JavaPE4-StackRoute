@@ -27,4 +27,11 @@ public class CheckNameTest
         assertTrue(actualResult);
 
     }
+
+    @Test
+    public void givenNegativeInputShouldReturnNegativeResult()
+    {
+        boolean actualResult = object.nameCheck("This is Jack");
+        assertFalse(actualResult);
+    }
 }
