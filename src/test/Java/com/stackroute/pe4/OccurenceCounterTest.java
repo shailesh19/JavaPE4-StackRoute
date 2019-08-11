@@ -28,4 +28,11 @@ public class OccurenceCounterTest
         int actualResult = object.countOccurences("hello world hello", "hello");
         assertEquals(2,actualResult);
     }
+
+    @Test
+    public void givenStringAndWordShouldReturnNegativeResult()
+    {
+        int actualResult = object.countOccurences("Hi there!", "hey");
+        assertEquals(0,actualResult);
+    }
 }
